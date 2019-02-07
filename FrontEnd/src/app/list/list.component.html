@@ -1,0 +1,31 @@
+<form>
+  <div class="form-group">
+      <label for="select"><b><h3>City</h3></b></label>
+    <select [(ngModel)]="citySelected" name="city" id="city" class="form-control drop" style="margin-left:20px; width: 310px;">Select
+     <option *ngFor=" let parkingspot of parkinglist" [value]= "parkingspot.city">
+       {{parkingspot.city}}
+
+     </option>
+
+    </select>
+    <button (click)="SearchCity(citySelected)" mat-raised-button style="margin-left:135px; background-color: rgb(43, 131, 202); color:white; -webkit-text-stroke-width: 0.4px;" >Search</button>
+
+  </div>
+  <table id="customers" class="table table-hover table-fixed" style="margin-top:15px">
+      <thead style="color:rgb(31, 115, 226); ">
+          <tr>
+            <th style="width: 1.1%; font-size: 20px;">ID</th>
+            <th style="width: 2.66%; font-size: 20px">Parking Spot</th>
+          </tr>
+      </thead>
+      <tbody >
+        <div *ngFor="let parkingspot of parkingSpotList">
+        <tr scope = "row"  >
+            <td style="width: 0.55%; padding-top:40px; padding-left:25px" >{{parkingspot.City}}</td>
+            <td style="width: 2.66%; font-size: 20px; padding-top:25px">{{parkingspot.ParkingName}}<td>
+            <td style="width: 0.55%; padding-top:40px; padding-left:25px">{{parkingspot.ParkingAddress}}</td>
+          </tr>
+        </div>
+      </tbody>
+    </table>
+</form>

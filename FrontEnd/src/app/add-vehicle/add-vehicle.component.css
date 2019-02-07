@@ -1,0 +1,23 @@
+.example-card {
+    max-width: 400px;
+  }
+mat-card {
+    background-color: rgb(200, 216, 238);
+    margin-top:28px;
+    margin-left:5px;
+    min-height:555px;
+    min-width:918px;
+}
+form {
+    border: black;
+    height: 300px;
+    margin-left: 150px;
+    outline: 5px solid whitesmoke;
+    width: 560px;
+}
+label {
+    margin-left:38px;
+    margin-top:20px;
+    margin-bottom:0px;
+    color: rgb(43, 117, 230);
+}

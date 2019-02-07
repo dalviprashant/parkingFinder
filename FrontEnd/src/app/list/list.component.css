@@ -1,0 +1,35 @@
+form {
+    border: black;
+    height: 600px;
+    margin-top: 1px;
+    margin-left: 16px;
+    outline: 5px solid rgb(9, 129, 228);
+    width: 350px;
+}
+label {
+    margin-left:30px;
+    margin-top:20px;
+    margin-bottom:0px;
+    color: rgb(43, 117, 230);
+}
+.table-fixed tbody {
+  height: 380px;
+  overflow-y: scroll;
+  width: 350px;
+}
+.table-fixed thead, .table-fixed tbody {
+  display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+  border-bottom-width: 0;
+}
+.table-fixed thead {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.table-fixed thead th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(43, 131, 202);
+  color: white;
+}

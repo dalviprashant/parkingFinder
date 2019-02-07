@@ -1,0 +1,13 @@
+.example-card {
+    max-width: 400px;
+  }
+mat-card {
+    background-color: rgb(200, 216, 238);
+    margin-top:28px;
+    margin-left:5px;
+    min-height:555px;
+    min-width:918px;
+}
+p {
+    font-size: 17px;
+}

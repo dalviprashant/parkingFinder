@@ -1,0 +1,63 @@
+<mat-card class="example-card pre-scrollable">
+    <mat-card-header>
+      <mat-card-title style="font-size:28px; padding-left:360px">Profile</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <table id="customers" class="table table-fixed table-bordered" style="width:800px; margin-left: 33px">
+        <thead>
+          <th style="font-weight: normal;font-size: 20px;padding-left:15px;width: 300px;background-color:rgb(168, 196, 235)">ID</th>
+          <th style="font-weight: normal;font-size: 20px;">{{customer._id}}</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-size: 20px; padding-left:15px;background-color:rgb(168, 196, 235)" >Name</td>
+            <td style="font-size: 20px">{{customer.name}}</td>
+          </tr>
+          <tr>
+              <td style="font-size: 20px; padding-left:15px;background-color:rgb(168, 196, 235)" >Mobile Number</td>
+              <td style="font-size: 20px">{{customer.mob}}</td>
+          </tr>
+          <tr>
+              <td style="font-size: 20px; padding-left:15px;background-color:rgb(168, 196, 235)" >Parmenent Address</td>
+              <td style="font-size: 20px">{{customer.address}}</td>
+          </tr>
+          <tr>
+              <td style="font-size: 20px; padding-left:15px;background-color:rgb(168, 196, 235)" >Bank Account Number</td>
+              <td style="font-size: 20px">{{customer.acc_no}}</td>
+          </tr>
+        </tbody>
+      </table><br>
+      <mat-card-header>
+      <mat-card-title style="font-size:28px; padding-left:310px">Vehicle Details</mat-card-title>
+      </mat-card-header>
+      <table id="customers" class="table table-fixed table-bordered" style="width:500px; margin-left: 180px;margin-bottom: 50px">
+          <thead>
+            <th style="font-weight: normal;font-size: 20px;padding-left:15px;width: 30px;background-color:rgb(168, 196, 235)">S.No.</th>
+            <th style="font-weight: normal;font-size: 20px;background-color:rgb(168, 196, 235)">Vehicle Number</th>
+            <th style="font-weight: normal;font-size: 20px;background-color:rgb(168, 196, 235)">Vehicle Type</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>{{customer.vehicles[0].number}}</td>
+              <td>{{customer.vehicles[0].type}}</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>{{customer.vehicles[1].number}}</td>
+                <td>{{customer.vehicles[1].type}}</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>{{customer.vehicles[2].number}}</td>
+              <td>{{customer.vehicles[2].type}}</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>{{customer.vehicles[3].number}}</td>
+              <td>{{customer.vehicles[3].type}}</td>
+            </tr>
+          </tbody>
+      </table>
+    </mat-card-content>
+  </mat-card>
